@@ -404,7 +404,7 @@ public class AppGenericFunctions {
         	driver.findElement(objMap.getLocator("qtyComboBox")).sendKeys(testData[i][2]);
         }
         
-        Thread.sleep(2000);
+        Thread.sleep(3000);
  //   func.moveToElement(objMap.getLocator("addItemToCart"));
     driver.findElement(objMap.getLocator("addItemToCart")).click();
    // report.pass(func.extentLabel(testData[i][1]+" has been successfully added to the cart", ExtentColor.GREY));

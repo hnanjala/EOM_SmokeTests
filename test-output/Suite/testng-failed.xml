@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="utilities.Listeners"/>
+    <listener class-name="utilities.AnnotationTransformer"/>
+  </listeners>
+  <test name="Test(failed)" parallel="true">
+    <classes>
+      <class name="tests.BOPIS_CSROrder">
+        <methods>
+          <include name="teardown"/>
+          <include name="Capture_Screenshot"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- tests.BOPIS_CSROrder -->
+      <class name="tests.STS_SLMQ_Visa">
+        <methods>
+          <include name="teardown"/>
+          <include name="Setup"/>
+          <include name="Capture_Screenshot"/>
+        </methods>
+      </class> <!-- tests.STS_SLMQ_Visa -->
+      <class name="tests.STS_CSROrder">
+        <methods>
+          <include name="Setup"/>
+          <include name="teardown"/>
+          <include name="Capture_Screenshot"/>
+        </methods>
+      </class> <!-- tests.STS_CSROrder -->
+      <class name="tests.SFS_CSROrder">
+        <methods>
+          <include name="teardown"/>
+          <include name="Setup"/>
+          <include name="Capture_Screenshot"/>
+        </methods>
+      </class> <!-- tests.SFS_CSROrder -->
+      <class name="tests.STS_RemorseCancelEntireOrder">
+        <methods>
+          <include name="Setup"/>
+          <include name="Capture_Screenshot"/>
+          <include name="CSR_RemorseCancel"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.STS_RemorseCancelEntireOrder -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- report theme -->
+		<!-- standard, dark -->
+		<theme>standard</theme>
+
+		<!-- document encoding -->
+		<!-- defaults to UTF-8 -->
+		<encoding>UTF-8</encoding>
+
+		<!-- protocol for script and stylesheets -->
+		<!-- defaults to https -->
+		<protocol>https</protocol>
+
+		<!-- title of the document -->
+		<documentTitle>Extent</documentTitle>
+
+		<!-- report name - displayed at top-nav -->
+		<reportName>
+	<img src="http://www.everesttech.com/sites/default/files/everest-logo.png"/>
+	<img src="http://static.ipaustralia.com.au/store3/14/05/1405215.1.high.jpg"/>
+	<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR--04qa2zzq2Uf9hmgjJeWXAhYlgegxmjEiZHO1JecU9oXHGGVSqST5fGb" />
+		</reportName>
+
+		<!-- location of charts in the test view -->
+		<!-- top, bottom -->
+		<testViewChartLocation>bottom</testViewChartLocation>
+
+		<!-- custom javascript -->
+		<scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    
+                });
+            ]]>
+		</scripts>
+
+		<!-- custom styles -->
+		<styles>
+            <![CDATA[
+                
+            ]]>
+		</styles>
+	</configuration>
+</extentreports>

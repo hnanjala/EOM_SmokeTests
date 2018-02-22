@@ -100,7 +100,7 @@ public void CSR_RemorseAppeaseOrderLevel() throws Exception
 				
 				report.pass(func.extentLabel("Order#: "+orderNum, ExtentColor.GREEN));
 				//System.out.println("row: "+i);
-				objExcel.updateExcel(".\\TestData","TestDataFile.xlsx","STS_TestData", orderNum, i-1, 8);
+				objExcel.updateExcel(".\\TestData","TestDataFile.xlsx","SFS_TestData", orderNum, i-1, 8);
 				Thread.sleep(5000);
 				
 				//driver.findElement(objMap.getLocator("cancelOrderHyperlink")).click();

@@ -78,7 +78,7 @@ public class STH_FSTDAppeasement {
 		ts=(TakesScreenshot)driver;
 		
 		extent=func.extentReportInvoke();
-		report=extent.createTest("STS_RemorseCancelEntireOrder", "STS CSR Order");
+		report=extent.createTest("CSR_RemorseAppeaseOrderLevel", "STS CSR Order");
 		
 		rowCount=testData.length;
 	colCount=testData[0].length;

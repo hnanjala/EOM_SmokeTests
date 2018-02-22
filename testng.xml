@@ -6,6 +6,11 @@
 		<listener class-name="utilities.AnnotationTransformer"></listener>
 	</listeners>
 	<test name="Test" parallel="false" thread-count="5" preserve-order="true">
+<!-- 	<groups>		
+	   <run>		
+	    	<include name="smokeTests" />		
+	   </run>		
+  </groups>  -->
 		<classes>
 			<class name="tests.BOPIS_CSROrder" />
             <class name="tests.SFS_CSROrder" />
@@ -14,5 +19,4 @@
 		    <class name="tests.STS_SLMQ_Visa" />
 		</classes>
 	</test> <!-- Test -->
-
 </suite> <!-- Suite -->

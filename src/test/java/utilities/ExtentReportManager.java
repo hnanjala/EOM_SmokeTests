@@ -16,7 +16,9 @@ public class ExtentReportManager {
 	
 	public static ExtentReports GetExtent(String FilePath, String DocumentTitle,String ReportName){
 		if (extent != null)
-                    return extent; //avoid creating new instance of html file
+		{
+                    return extent; 
+		}//avoid creating new instance of html file
                 extent = new ExtentReports();		
 		extent.attachReporter(getHtmlReporter(FilePath, DocumentTitle,ReportName));
 		return extent;

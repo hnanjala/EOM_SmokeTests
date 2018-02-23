@@ -3,6 +3,7 @@ package utilities;
 import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Action;
@@ -81,16 +82,19 @@ public class AppGenericFunctions {
 	
 	//*********************************************************************************************************************************//
 	
-	public void ProceedToPaymentAndPayWithAmex(WebDriver driver) throws Exception
+	public void ProceedToPaymentAndPayWithAmex (WebDriver driver) throws Exception,ElementNotVisibleException
 	{
 		func.moveToElement(driver,objMap.getLocator("proceedToPayment"));
 		Thread.sleep(2000);
 		driver.findElement(objMap.getLocator("proceedToPayment")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]")).click();
-		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]/following::input[@name='securityCode'][1]")).sendKeys("1224");
-		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]/following::input[@name='securityCode'][1]/following::span[text()='ADD'][1]")).click();
 		
+		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]")).click();
+		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]/following::input[@name='securityCode'][1]")).click();
+		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]/following::input[@name='securityCode'][1]")).sendKeys("1224");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]/following::input[@name='securityCode'][1]/following::span[text()='ADD'][1]")).click();
+				
 		//report.info("Payment has been added successfully");
 		Thread.sleep(5000);
 	}
@@ -396,7 +400,8 @@ public class AppGenericFunctions {
 			}
 
 			wait.until(ExpectedConditions.elementToBeClickable(objMap.getLocator("shipToAddressRadioButton")));
-			Thread.sleep(3000);			
+			Thread.sleep(3000);	//Original value
+			//Thread.sleep(10000);	//Offshore
         driver.findElement(objMap.getLocator("shipToAddressRadioButton")).click();
         if(testData[i][2]!="1")
         {

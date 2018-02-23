@@ -5,10 +5,9 @@
     <classes>
       <class name="tests.STH_FSTDAppeasement">
         <methods>
-          <include name="CSR_RemorseCancel"/>
           <include name="teardown"/>
+          <include name="CSR_Order"/>
           <include name="Setup"/>
-          <include name="Capture_Screenshot"/>
         </methods>
       </class> <!-- tests.STH_FSTDAppeasement -->
     </classes>

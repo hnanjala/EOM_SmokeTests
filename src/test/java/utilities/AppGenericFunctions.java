@@ -85,10 +85,8 @@ public class AppGenericFunctions {
 	public void ProceedToPaymentAndPayWithAmex (WebDriver driver) throws Exception,ElementNotVisibleException
 	{
 		func.moveToElement(driver,objMap.getLocator("proceedToPayment"));
-		Thread.sleep(2000);
 		driver.findElement(objMap.getLocator("proceedToPayment")).click();
-		Thread.sleep(5000);
-		
+		Thread.sleep(7000);
 		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]")).click();
 		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]/following::input[@name='securityCode'][1]")).click();
 		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]/following::input[@name='securityCode'][1]")).sendKeys("1224");
@@ -105,7 +103,6 @@ public class AppGenericFunctions {
 	public void ProceedToPaymentAndPayWithVisa(WebDriver driver) throws Exception
 	{
 		func.moveToElement(driver,objMap.getLocator("proceedToPayment"));
-		Thread.sleep(2000);
 		driver.findElement(objMap.getLocator("proceedToPayment")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//label[contains(text(),'Visa ending with 2222')]")).click();
@@ -122,7 +119,6 @@ public class AppGenericFunctions {
 	public void ProceedToPaymentAndPayWithMaster(WebDriver driver) throws Exception
 	{
 		func.moveToElement(driver,objMap.getLocator("proceedToPayment"));
-		Thread.sleep(2000);
 		driver.findElement(objMap.getLocator("proceedToPayment")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//label[contains(text(),'Master Card ending with 1773')]")).click();
@@ -139,7 +135,6 @@ public class AppGenericFunctions {
 	public void ProceedToPaymentAndPayWithDiscover(WebDriver driver) throws Exception
 	{
 		func.moveToElement(driver,objMap.getLocator("proceedToPayment"));
-		Thread.sleep(2000);
 		driver.findElement(objMap.getLocator("proceedToPayment")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//label[contains(text(),'Discover ending with 0035')]")).click();

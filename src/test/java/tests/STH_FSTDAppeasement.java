@@ -89,7 +89,7 @@ public class STH_FSTDAppeasement {
 	
 	
 	@Test
-public void CSR_Order_New() throws Exception
+public void CSR_Order_TestAppease() throws Exception
 	{
 appFunc.Login_EOM(driver);
 	    

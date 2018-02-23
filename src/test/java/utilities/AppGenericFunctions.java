@@ -108,7 +108,10 @@ public class AppGenericFunctions {
 		func.moveToElement(driver,objMap.getLocator("proceedToPayment"));
 		driver.findElement(objMap.getLocator("proceedToPayment")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//label[contains(text(),'Visa ending with 2222')]")).click();
+		if(!(driver.findElement(By.xpath("//label[contains(text(),'Visa ending with 2222')]/following::input[@name='securityCode'][1]")).isDisplayed()))
+		{
+			driver.findElement(By.xpath("//label[contains(text(),'Visa ending with 2222')]")).click();
+		}
 		driver.findElement(By.xpath("//label[contains(text(),'Visa ending with 2222')]/following::input[@name='securityCode'][1]")).sendKeys("234");
 		driver.findElement(By.xpath("//label[contains(text(),'Visa ending with 2222')]/following::input[@name='securityCode'][1]/following::span[text()='ADD'][1]")).click();
 		
@@ -124,7 +127,10 @@ public class AppGenericFunctions {
 		func.moveToElement(driver,objMap.getLocator("proceedToPayment"));
 		driver.findElement(objMap.getLocator("proceedToPayment")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//label[contains(text(),'Master Card ending with 1773')]")).click();
+		if(!(driver.findElement(By.xpath("//label[contains(text(),'Master Card ending with 1773')]/following::input[@name='securityCode'][1]")).isDisplayed()))
+		{
+			driver.findElement(By.xpath("//label[contains(text(),'Master Card ending with 1773')]")).click();
+		}
 		driver.findElement(By.xpath("//label[contains(text(),'Master Card ending with 1773')]/following::input[@name='securityCode'][1]")).sendKeys("234");
 		driver.findElement(By.xpath("//label[contains(text(),'Master Card ending with 1773')]/following::input[@name='securityCode'][1]/following::span[text()='ADD'][1]")).click();
 		
@@ -140,7 +146,10 @@ public class AppGenericFunctions {
 		func.moveToElement(driver,objMap.getLocator("proceedToPayment"));
 		driver.findElement(objMap.getLocator("proceedToPayment")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//label[contains(text(),'Discover ending with 0035')]")).click();
+		if(!(driver.findElement(By.xpath("//label[contains(text(),'Discover ending with 0035')]/following::input[@name='securityCode'][1]")).isDisplayed()))
+		{
+			driver.findElement(By.xpath("//label[contains(text(),'Discover ending with 0035')]")).click();
+		}
 		driver.findElement(By.xpath("//label[contains(text(),'Discover ending with 0035')]/following::input[@name='securityCode'][1]")).sendKeys("234");
 		driver.findElement(By.xpath("//label[contains(text(),'Discover ending with 0035')]/following::input[@name='securityCode'][1]/following::span[text()='ADD'][1]")).click();
 		

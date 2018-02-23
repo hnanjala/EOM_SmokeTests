@@ -97,7 +97,7 @@ appFunc.Login_EOM(driver);
 			
 			appFunc.CheckoutAndSelectRegisteredCustomer(driver);
 		//	appFunc.ShippingTwoday(driver);
-			appFunc.ProceedToPaymentAndPayWithAmex(driver);
+			appFunc.ProceedToPaymentAndPayWithVisa(driver);
 			String orderNum=appFunc.ProceedToSummaryAndPlaceOrder(driver);
 			
 			report.pass(func.extentLabel("Order#: "+orderNum, ExtentColor.GREEN));

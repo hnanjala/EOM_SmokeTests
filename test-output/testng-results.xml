@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="151999" started-at="2018-02-23T21:21:09Z" finished-at="2018-02-23T21:23:41Z">
+  <suite name="Default suite" duration-ms="152299" started-at="2018-02-23T21:25:41Z" finished-at="2018-02-23T21:28:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="151999" started-at="2018-02-23T21:21:09Z" finished-at="2018-02-23T21:23:41Z">
+    <test name="Default test" duration-ms="152299" started-at="2018-02-23T21:25:41Z" finished-at="2018-02-23T21:28:14Z">
       <class name="tests.STH_FSTDAppeasement">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:tests.STH_FSTDAppeasement@7ce6a65d]" name="Setup" is-config="true" duration-ms="9050" started-at="2018-02-23T16:21:09Z" finished-at="2018-02-23T16:21:18Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:tests.STH_FSTDAppeasement@7ce6a65d]" name="Setup" is-config="true" duration-ms="9618" started-at="2018-02-23T16:25:41Z" finished-at="2018-02-23T16:25:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="FAIL" signature="CSR_Order_TestAppease()[pri:0, instance:tests.STH_FSTDAppeasement@7ce6a65d]" name="CSR_Order_TestAppease" duration-ms="142867" started-at="2018-02-23T16:21:18Z" finished-at="2018-02-23T16:23:41Z">
+        <test-method status="FAIL" signature="CSR_Order_TestAppease()[pri:0, instance:tests.STH_FSTDAppeasement@7ce6a65d]" name="CSR_Order_TestAppease" duration-ms="142600" started-at="2018-02-23T16:25:51Z" finished-at="2018-02-23T16:28:14Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -47,11 +47,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CSR_Order_TestAppease -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.STH_FSTDAppeasement@7ce6a65d]" name="teardown" is-config="true" duration-ms="1" started-at="2018-02-23T16:23:41Z" finished-at="2018-02-23T16:23:41Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.STH_FSTDAppeasement@7ce6a65d]" name="teardown" is-config="true" duration-ms="1" started-at="2018-02-23T16:28:14Z" finished-at="2018-02-23T16:28:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.STH_FSTDAppeasement@7ce6a65d]" name="teardown" is-config="true" duration-ms="1" started-at="2018-02-23T16:23:41Z" finished-at="2018-02-23T16:23:41Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.STH_FSTDAppeasement@7ce6a65d]" name="teardown" is-config="true" duration-ms="0" started-at="2018-02-23T16:28:14Z" finished-at="2018-02-23T16:28:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

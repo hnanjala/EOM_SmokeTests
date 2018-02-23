@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="79461" started-at="2018-02-23T20:38:18Z" finished-at="2018-02-23T20:39:37Z">
+  <suite name="Default suite" duration-ms="76815" started-at="2018-02-23T20:41:48Z" finished-at="2018-02-23T20:43:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="79461" started-at="2018-02-23T20:38:18Z" finished-at="2018-02-23T20:39:37Z">
+    <test name="Default test" duration-ms="76815" started-at="2018-02-23T20:41:48Z" finished-at="2018-02-23T20:43:05Z">
       <class name="tests.STH_FSTDAppeasement">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:tests.STH_FSTDAppeasement@3c46e67a]" name="Setup" is-config="true" duration-ms="10609" started-at="2018-02-23T15:38:18Z" finished-at="2018-02-23T15:38:29Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:tests.STH_FSTDAppeasement@3c46e67a]" name="Setup" is-config="true" duration-ms="8669" started-at="2018-02-23T15:41:48Z" finished-at="2018-02-23T15:41:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="FAIL" signature="CSR_Order()[pri:0, instance:tests.STH_FSTDAppeasement@3c46e67a]" name="CSR_Order" duration-ms="68769" started-at="2018-02-23T15:38:29Z" finished-at="2018-02-23T15:39:37Z">
+        <test-method status="FAIL" signature="CSR_Order()[pri:0, instance:tests.STH_FSTDAppeasement@3c46e67a]" name="CSR_Order" duration-ms="68077" started-at="2018-02-23T15:41:57Z" finished-at="2018-02-23T15:43:05Z">
           <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
               <![CDATA[element not visible
@@ -22,7 +22,7 @@ Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54
 System info: host: 'EXPLTDC1B0119WN', ip: '172.26.216.159', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\hnanjala\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}
-Session ID: dd2e630605bb598d5b140b65abba8616]]>
+Session ID: 630cec86ce62ba40cbe4e2bc1d269083]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
@@ -33,7 +33,7 @@ Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54
 System info: host: 'EXPLTDC1B0119WN', ip: '172.26.216.159', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\hnanjala\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}
-Session ID: dd2e630605bb598d5b140b65abba8616
+Session ID: 630cec86ce62ba40cbe4e2bc1d269083
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -80,11 +80,11 @@ Session ID: dd2e630605bb598d5b140b65abba8616
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CSR_Order -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.STH_FSTDAppeasement@3c46e67a]" name="teardown" is-config="true" duration-ms="1" started-at="2018-02-23T15:39:37Z" finished-at="2018-02-23T15:39:37Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.STH_FSTDAppeasement@3c46e67a]" name="teardown" is-config="true" duration-ms="0" started-at="2018-02-23T15:43:05Z" finished-at="2018-02-23T15:43:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.STH_FSTDAppeasement@3c46e67a]" name="teardown" is-config="true" duration-ms="0" started-at="2018-02-23T15:39:37Z" finished-at="2018-02-23T15:39:37Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.STH_FSTDAppeasement@3c46e67a]" name="teardown" is-config="true" duration-ms="0" started-at="2018-02-23T15:43:05Z" finished-at="2018-02-23T15:43:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

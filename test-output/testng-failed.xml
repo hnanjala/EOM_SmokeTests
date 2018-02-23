@@ -6,7 +6,7 @@
       <class name="tests.STH_FSTDAppeasement">
         <methods>
           <include name="teardown"/>
-          <include name="CSR_Order"/>
+          <include name="CSR_Order_TestAppease"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- tests.STH_FSTDAppeasement -->

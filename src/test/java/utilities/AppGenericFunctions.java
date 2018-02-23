@@ -87,7 +87,10 @@ public class AppGenericFunctions {
 		func.moveToElement(driver,objMap.getLocator("proceedToPayment"));
 		driver.findElement(objMap.getLocator("proceedToPayment")).click();
 		Thread.sleep(7000);
-		//driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]")).click();
+		if(!(driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]/following::input[@name='securityCode'][1]")).isDisplayed()))
+		{
+		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]")).click();
+		}
 		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]/following::input[@name='securityCode'][1]")).click();
 		driver.findElement(By.xpath("//label[contains(text(),'Amex ending with 1004')]/following::input[@name='securityCode'][1]")).sendKeys("1224");
 		Thread.sleep(2000);

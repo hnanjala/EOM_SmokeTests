@@ -73,7 +73,7 @@ public class STS_SLMQ_Visa {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		wait=new WebDriverWait(driver,15);
 		ts=(TakesScreenshot)driver;
-		
+		//HI there
 		extent=func.extentReportInvoke();
 		report=extent.createTest("STS_SLMQ_Visa", "STS CSR Order");
 		

@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.STH_FSTDAppeasement">
+      <class name="tests.STS_SLMQ_Visa">
         <methods>
+          <include name="CSR_STS_SLMQ_Visa"/>
           <include name="teardown"/>
-          <include name="CSR_Order_TestAppease"/>
           <include name="Setup"/>
+          <include name="Capture_Screenshot"/>
         </methods>
-      </class> <!-- tests.STH_FSTDAppeasement -->
+      </class> <!-- tests.STS_SLMQ_Visa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
